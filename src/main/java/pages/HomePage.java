@@ -6,7 +6,7 @@ import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 
 public class HomePage {
 
@@ -106,5 +106,8 @@ public class HomePage {
 
     public void scrollBlockIngredientsToBottom(){
         toppingFilleItem.scrollIntoView(true);
+    }
+    public void toppingsButtonSelected(){
+        toppingsButton.shouldHave(cssClass("tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"));
     }
 }

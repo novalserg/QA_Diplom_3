@@ -37,9 +37,9 @@ public class GoToSectionTest {
     public void goToTheToppingsSection() {
 
         HomePage homePage = open(HomePage.URL, HomePage.class);
-        homePage.scrollBlockIngredientsToBottom();
-        homePage.clickSaucesButton();
+        homePage.clickBunsButton();
         homePage.clickToppingsButton();
-        homePage.assertToppingsChaptersVisible();
+        homePage.toppingsButtonSelected();
+
     }
 }
