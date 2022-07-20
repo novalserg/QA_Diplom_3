@@ -6,13 +6,13 @@ import org.openqa.selenium.support.How;
 
 public class LoginPage {
 
-    @FindBy(how = How.XPATH, using = "/html/body/div/div/main/div/form/fieldset[1]/div/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/main/div/form/fieldset[1]/div/div/input")
     private SelenideElement inputEmailField;
 
-    @FindBy(how = How.XPATH, using = "/html/body/div/div/main/div/form/fieldset[2]/div/div/input")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"root\"]/div/main/div/form/fieldset[2]/div/div/input")
     private SelenideElement inputPasswordField;
 
-    @FindBy (how = How.XPATH, using = "/html/body/div/div/main/div/form/button")
+    @FindBy (how = How.XPATH, using = "//*[@id=\"root\"]/div/main/div/form/button")
     private SelenideElement loginSubmitButton;
 
     @FindBy (how = How.XPATH, using = "Зарегистрироваться")
